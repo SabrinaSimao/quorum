@@ -1,6 +1,8 @@
 # quorum
  Working with Legislative Data
 
+QUESTIONS
+
 1. Discuss your solution’s time complexity. What tradeoffs did you make?
 O(n), where n is the total number of records in each file.
 We read each file once linearly, process each vote once, and then use a lookup dictionary for the legislators/bills/votes (which is O(1))
@@ -24,3 +26,20 @@ If it was a requirement, I could make a function that accepted both formats.
 4. How long did you spend working on the assignment?
 So, i started looking into this friday,but i got really sick and started taking antibiotics. Only today (sunday) i felt a little better to finish it and commit all on git.
 Actually looking at it and coding must have been about 1h, maybe 1h30 counting the time to type and answer the questions.
+
+TO RUN:
+
+- No external lib is required, simply unzip the csvs folder in the same directory as the source code, and run the main.py code.
+it should look like this:
+
+C:.
+|   main.py
+|   README.md
+|   
+\---Quorum_Coding_Challenge
+    \---Quorum Coding Challenge - Candidate Folder
+            bills.csv
+            legislators.csv
+            Quorum Coding Challenge Legislative Data.pdf
+            votes.csv
+            vote_results.csv
