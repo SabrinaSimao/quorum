@@ -30,16 +30,19 @@ Actually looking at it and coding must have been about 1h, maybe 1h30 counting t
 TO RUN:
 
 - No external lib is required, simply unzip the csvs folder in the same directory as the source code, and run the main.py code.
-it should look like this:
 
-C:.
-|   main.py
-|   README.md
-|   
-\---Quorum_Coding_Challenge
-    \---Quorum Coding Challenge - Candidate Folder
-            bills.csv
-            legislators.csv
-            Quorum Coding Challenge Legislative Data.pdf
-            votes.csv
-            vote_results.csv
+It should look like this:
+
+## Project Structure
+
+    C:.
+    |   main.py
+    |   README.md
+    |   
+    \---Quorum_Coding_Challenge
+        \---Quorum Coding Challenge - Candidate Folder
+                bills.csv
+                legislators.csv
+                Quorum Coding Challenge Legislative Data.pdf
+                votes.csv
+                vote_results.csv
