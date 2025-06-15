@@ -32,7 +32,7 @@ def load_legislators():
                 'supported_bills': 0,
                 'opposed_bills': 0
             }
-    print("Legislators: ", legislators)
+    #print("Legislators: ", legislators)
     return legislators
 
 def load_bills():
@@ -47,7 +47,7 @@ def load_bills():
                 'supporter_count': 0,
                 'opposer_count': 0
             }
-    print("Bills: ", bills)
+    #print("Bills: ", bills)
     return bills
 
 def load_votes():
@@ -57,7 +57,7 @@ def load_votes():
         reader = csv.DictReader(csvfile)
         for row in reader:
             votes[row['id']] = row['bill_id']
-    print("votes: ", votes)
+    #print("votes: ", votes)
     return votes
 
 def process_vote_results(legislators, bills, votes):
@@ -110,7 +110,7 @@ def write_bills_output(bills, legislators):
     """Write bill summary data"""
     # dict lookup for sponsor names
     sponsor_names = {legislator['id']: legislator['name'] for legislator in legislators.values()}
-    print("sponsors: ",sponsor_names) # reminder: currently we only have one known sponsor and one unknown
+    #print("sponsors: ",sponsor_names) # reminder: currently we only have one known sponsor and one unknown
 
     with open(BILLS_OUTPUT, 'w', newline='') as csvfile:
         fieldnames = ['id', 'title', 'supporter_count', 'opposer_count', 'primary_sponsor']
